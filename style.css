@@ -13,13 +13,15 @@ body {
 
 .container {
     width: 1140px;
-    height: 600px;
-    background-color: rgb(187, 157, 157);
+    height: 730px;
+    background: linear-gradient(to top, rgb(131, 89, 89) 10%, rgb(255, 166, 166) 80%);
     padding: 0;
     margin: 0;
 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 14px 64px 14px rgba(43, 20, 20, 0.479);
 
     /* header */
     header {
@@ -30,6 +32,7 @@ body {
         padding: 30px;
         border: 3px solid black;
         background: linear-gradient(to right, rgb(133, 43, 43) 3%, rgb(196, 51, 51) 60%);
+        box-shadow: 0px 6px 10px  rgba(54, 23, 23, 0.808);
 
         h1 {
             font-size: 40px;
@@ -52,13 +55,64 @@ body {
 
         .cilindro,
         .cone {
+            text-align: center;
             margin-top: 40px;
             margin-left: 80px;
             margin-right: 80px;
+
             #cone,
             #cilindro {
                 width: 310px;
                 /* animation: float 6s linear infinite; */
+            }
+
+            /* Inputs */
+
+            input {
+                box-shadow: 0px 7px 10px rgba(54, 23, 23, 0.808);
+                padding: 5px;
+                margin: 5px;
+                border: 2px black solid;
+                border-radius: 30px;
+                border-bottom-left-radius: 0px;
+                font-size: 112%;
+                background: linear-gradient(to right, rgb(126, 53, 53) 3%, rgb(197, 73, 73) 60%);
+                color: white;
+                transition: 0.5s;
+            }
+
+            input::placeholder {
+                color: rgba(255, 255, 255, 0.733);
+            }
+            input:hover{
+                filter: brightness(150%);
+                transition: 0.5s;
+            }
+
+            button{
+                font-size: 112%;
+                background: linear-gradient(to right, rgb(126, 53, 53) 3%, rgb(197, 73, 73) 60%);
+                color: white;
+                padding: 5px;
+                box-shadow: 0px 7px 10px rgba(54, 23, 23, 0.808);
+                margin: 5px;
+                border: 2px black solid;
+                border-radius: 30px;
+                transition: 0.8s;
+            }
+            button:hover{
+                font-size: 124%;
+                transition: 0.4s;
+                filter: brightness(150%);
+                box-shadow: 0px 3px 17px rgba(54, 23, 23, 0.459);
+
+            }
+            button:active{
+                font-size: 106%;
+                transition: 0.01s;
+                filter: brightness(80%);
+                box-shadow: 0px 0px 8px rgba(54, 23, 23, 0.459);
+                
             }
         }
     }
